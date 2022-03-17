@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+body {
+  background: #232323;
+  font-family: "Roboto Slab", serif;
+}
+
+.page-header {
+  margin: 64px;
+  padding: 64px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(105, 54, 170, 0.4) 5px 5px, rgba(105, 54, 170, 0.3) 10px 10px,
+    rgba(105, 54, 170, 0.2) 15px 15px, rgba(105, 54, 170, 0.1) 20px 20px,
+    rgba(105, 54, 170, 0.05) 25px 25px;
+  background-color: #f7f7f7;
+}
+
+.header-text {
+  padding-left: 16px;
+  color: #232323;
+}
+
+.header-text h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h1,
+h3 {
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #69369e;
+  transform-origin: center center;
+  transition: transform 0.25s ease-out;
+}
+
+.header-text h1:hover::before {
+  transform: scaleX(1);
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #69369e;
+  transform-origin: center center;
+  transition: transform 0.25s ease-out;
+}
+
+h3:hover::before {
+  transform: scaleX(1);
+}
+
+.header-text h3 {
+  position: relative;
+  top: -15px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.profile-picture {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 400px;
+  max-height: 160px;
+  border: 3px solid transparent;
+}
+
+.profile-picture:hover {
+  border: 3px solid #69369e;
+  transform: scale(1.05);
+}
+
+.icons {
+  position: relative;
+  top: -30px;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 32px;
+  color: #232323;
+}
+
+.icons a:hover {
+  font-size: 30px;
+  -webkit-transition: color ease-in-out 600ms;
+  color: #69369e;
+}
+
+.icons a:nth-of-type(2) {
+  margin: 10px;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  justify-content: space-around;
+  margin: 5%;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: rgba(105, 54, 170, 0.4) 5px 5px, rgba(105, 54, 170, 0.3) 10px 10px,
+    rgba(105, 54, 170, 0.2) 15px 15px, rgba(105, 54, 170, 0.1) 20px 20px,
+    rgba(105, 54, 170, 0.05) 25px 25px;
+  background-color: #f7f7f7;
+  width: 60%;
+}
+
+.projects div {
+  margin-bottom: 80px;
+}
+
+.projects .intra-projects {
+  background: #f7f7f7;
+  border-radius: 16px;
+  box-shadow: #69369e 0px 5px 15px;
+  padding: 20px;
+}
+
+.projects .intra-projects:hover {
+  transform: scale(1.05);
+  box-shadow: #69369e 0px 10px 30px;
+}
+
+.projects .intra-projects h2 {
+  color: #232323;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.projects-tittle {
+  color: #232323;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.projects-tittle:hover {
+  -webkit-transition: color ease-in-out 600ms;
+  color: #69369e;
+  text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.3);
+}
+
+.achievements {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: rgba(105, 54, 170, 0.4) 5px 5px, rgba(105, 54, 170, 0.3) 10px 10px,
+    rgba(105, 54, 170, 0.2) 15px 15px, rgba(105, 54, 170, 0.1) 20px 20px,
+    rgba(105, 54, 170, 0.05) 25px 25px;
+  background-color: #f7f7f7;
+}
+
+.achievements div {
+  text-align: center;
+  margin: 20px;
+}
+
+.achievements img {
+  max-height: 160px;
+  webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.achievements img:hover {
+  transform: scale(1.05);
+}
+
+.achievements h3 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #232323;
+}
